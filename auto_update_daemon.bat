@@ -64,9 +64,11 @@ echo.
 
 ::curl -L https://raw.githubusercontent.com/MiSiEkHASH/ROC_API_UPDATE/main/api_ver.dat
 echo ok, wait a moment...
+echo %date%:%time:~0,5%: Ok, wait a moment...>>logfile.log
 timeout 62
 echo.
 echo upgrade done!
+echo %date%:%time:~0,5%: Upgrade done!>>logfile.log
 timeout 3 > nul
 cls
 goto loop
