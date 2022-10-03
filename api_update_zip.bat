@@ -4,7 +4,7 @@ echo.
 echo *** LOOKING FOR UPDATE... ***
 echo.
 curl -s -L https://raw.githubusercontent.com/MiSiEkHASH/ROC_API_UPDATE/main/update.dat -o C:\Aplitt\update\update.dat
-curl s- -L https://raw.githubusercontent.com/MiSiEkHASH/ROC_API_UPDATE/main/api_ver.dat -o C:\Aplitt\update\api_ver.dat
+curl -s -L https://raw.githubusercontent.com/MiSiEkHASH/ROC_API_UPDATE/main/api_ver.dat -o C:\Aplitt\update\api_ver.dat
 cls
 set /p update=<C:\Aplitt\update\update.dat
 set /p apiver=<C:\Aplitt\update\api_ver.dat
