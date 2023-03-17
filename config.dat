@@ -1,0 +1,33 @@
+#config file for autoupgrade ROC API backend application
+#Freematic Sp. z o.o. (C) 2022
+
+//upgrade time [hh:mm]
+UpdateTime=21:00
+
+//create last API backup [true/false]
+CreateBackup=true
+
+//allow to update [true/false]
+AllowToUpadte=true
+
+//check API version 
+CurrentApiVersionPath=C:\Aplitt\Aplitt.ROC.PaymentMachine.API\api_ver.ini
+LastApiVersionUrl=https://raw.githubusercontent.com/MiSiEkHASH/ROC_API_UPDATE/main/api_ver.dat
+
+//file patch API
+ApiDir=C:\Aplitt\Aplitt.ROC.PaymentMachine.API
+UpdateDownloadDir=C:\Aplitt\update
+
+//update package url and file name:
+UpdatePackageUrl=https://github.com/MiSiEkHASH/ROC_API_UPDATE/raw/main/update.zip?raw=true
+UpdatePackageFilename=update.zip
+
+//serives main API and Notifier names
+ApiServiceName=Aplitt.ROC.PaymentMachine.API
+NotifierServiceName=Aplitt.ROC.PaymentMachine.StateNotifier
+
+
+# exmaple read from config file in command line
+for /f "tokens=2 delims==" %a in ('findstr /C:"config_name" config.dat') do set variable_from_config=%a
+
+
