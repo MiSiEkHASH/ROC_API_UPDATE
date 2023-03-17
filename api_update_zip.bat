@@ -45,12 +45,12 @@ set /p ApiVerCheck=<C:\Aplitt\Aplitt.ROC.PaymentMachine.API\api_ver.ini
 if "%ApiVerCheck%"=="%apiver%" (
 	echo.
 	echo update %ApiVerCheck%, done!
-	echo %date%:%time%:Update OK, now API is: %apiver% >> C:\Aplitt\update
+	echo %date%:%time%:Update OK, now API is: %ApiVerCheck% >> C:\Aplitt\update\api_update.log
 	echo.
 ) else (
 	echo.
 	echo update fail! send email notification!
-	echo %date%:%time%:Update API to %apiver% FAIL! >> C:\Aplitt\update
+	echo %date%:%time%:Update API to %ApiVerCheck% FAIL! >> C:\Aplitt\update\api_update.log
 	echo.
 )
 echo.
