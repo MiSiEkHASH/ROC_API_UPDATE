@@ -54,14 +54,6 @@ if "%ApiVerCheck%"=="%apiver%" (
 	echo.
 )
 echo.
-echo *** ADDING NEW PARAMETERS ***
-echo.
-cd C:\Aplitt\Aplitt.ROC.PaymentMachine.API
-sed -i "16i \\t\"WebUIRequestRetryAmount\": 3, // ilosc powtorzen wykonania requesta w przypadku, gdy nastapi error" appsettings.json
-sed -i "17i \\t\"WebUIRequestDelay\": 3, // czas w sekundach pomiedzy powtorkami requesta" appsettings.json
-sed -i "18i \\t\"WebUIRequestTimeOut\": 30, // czas w sekundach po jakim nastepuje timeout requesta i jego ponowna proba wyslania" appsettings.json
-timeout 2 > nul
-echo.
 echo *** RESTART SERVICES... ***
 echo.
 C:\Aplitt\Aplitt.ROC.PaymentMachine.API\nssm.exe start Aplitt.ROC.PaymentMachine.API
