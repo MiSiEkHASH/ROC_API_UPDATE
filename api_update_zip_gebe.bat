@@ -4,7 +4,7 @@ echo.
 echo *** LOOKING FOR UPDATE... ***
 echo.
 curl -s -L https://raw.githubusercontent.com/MiSiEkHASH/ROC_API_UPDATE/main/update.dat -o C:\Aplitt\update\update.dat
-curl -s -L https://raw.githubusercontent.com/MiSiEkHASH/ROC_API_UPDATE/main/api_ver.dat -o C:\Aplitt\update\api_ver.dat
+curl -s -L https://raw.githubusercontent.com/MiSiEkHASH/ROC_API_UPDATE/main/api_ver_gebe.dat -o C:\Aplitt\update\api_ver.dat
 cls
 set /p update=<C:\Aplitt\update\update.dat
 set /p apiver=<C:\Aplitt\update\api_ver.dat
@@ -16,7 +16,7 @@ pause
 echo.
 echo *** DOWNLOADING UPDATE PACKAGE... ***
 echo.
-curl -L https://github.com/MiSiEkHASH/ROC_API_UPDATE/raw/main/update.zip?raw=true -o C:\Aplitt\update\update.zip
+curl -L https://github.com/MiSiEkHASH/ROC_API_UPDATE/raw/main/update_gebe_186.zip?raw=true -o C:\Aplitt\update\update_gebe_186.zip
 timeout 2 > nul
 echo.
 echo *** CREATING BACKUP... ***
