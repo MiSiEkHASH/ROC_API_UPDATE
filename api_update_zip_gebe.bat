@@ -8,9 +8,9 @@ curl -s -L https://raw.githubusercontent.com/MiSiEkHASH/ROC_API_UPDATE/main/api_
 cls
 set /p update=<C:\Aplitt\update\update.dat
 set /p apiver=<C:\Aplitt\update\api_ver.dat
-echo ---------------------------------------------------------------------
+echo -------------------------------------------------------------------------------------
 echo    ROC API UPDATE: %apiver% [UPGRADE:%update%]
-echo ---------------------------------------------------------------------
+echo -------------------------------------------------------------------------------------
 echo.
 pause
 echo.
