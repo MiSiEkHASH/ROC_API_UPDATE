@@ -28,6 +28,6 @@ NotifierServiceName=Aplitt.ROC.PaymentMachine.StateNotifier
 
 
 # exmaple read from config file in command line
-for /f "tokens=2 delims==" %a in ('findstr /C:"config_name" config.dat') do set variable_from_config=%a
+for /f "tokens=1 delims==" %a in ('findstr /C:"allowed" curl -s -L https://raw.githubusercontent.com/MiSiEkHASH/ROC_API_UPDATE/main/update.dat') do set variable_from_config=%a
 
 
